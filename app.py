@@ -14,7 +14,7 @@ iris_prediction_mapper={0:'Iris-Setosa',1:'Iris-Versicolour',2:'Iris-Virginica'}
 def model_load():
     #load the classifier model 
     try:
-        iris_loaded_model = pickle.load(open('./model/iris_model.sav', 'rb'))
+        iris_loaded_model = pickle.load(open('./iris_model.sav', 'rb'))
         return iris_loaded_model
     except Exception as e:
         print ( f"Model Load Error {str(e)}" )
